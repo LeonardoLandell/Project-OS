@@ -1,0 +1,28 @@
+@media (max-width: 900px) {
+  .header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .header button {
+    width: 100%;
+  }
+
+  .board {
+    grid-auto-columns: 86%;
+
+    scroll-snap-type: x mandatory;
+
+    padding-bottom: 16px;
+  }
+
+  .board::-webkit-scrollbar {
+    display: none;
+  }
+
+  .column {
+    min-height: 360px;
+
+    scroll-snap-align: center;
+  }
+}

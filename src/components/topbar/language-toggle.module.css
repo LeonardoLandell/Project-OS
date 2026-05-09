@@ -1,0 +1,31 @@
+.toggle {
+  display: flex;
+  align-items: center;
+
+  padding: 4px;
+
+  border-radius: 14px;
+
+  background: rgba(255,255,255,0.05);
+
+  border: 1px solid var(--border);
+}
+
+.toggle button {
+  width: 42px;
+  height: 34px;
+
+  border: none;
+  border-radius: 10px;
+
+  background: transparent;
+  color: var(--muted);
+
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.active {
+  background: white !important;
+  color: black !important;
+}

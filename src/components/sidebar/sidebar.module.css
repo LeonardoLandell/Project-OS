@@ -1,0 +1,94 @@
+.sidebar {
+  min-height: 100vh;
+  padding: 24px 18px;
+  background: rgba(5, 7, 13, 0.82);
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 32px;
+}
+
+.logo {
+  width: 40px;
+  height: 40px;
+  border-radius: 14px;
+  display: grid;
+  place-items: center;
+  font-weight: 800;
+  background: linear-gradient(135deg, var(--accent), var(--accent-2));
+  color: white;
+}
+
+.brand strong {
+  display: block;
+  font-size: 15px;
+}
+
+.brand span {
+  font-size: 12px;
+  color: var(--muted);
+}
+
+.nav {
+  display: grid;
+  gap: 8px;
+}
+
+.navItem {
+  width: 100%;
+  border: 1px solid transparent;
+  background: transparent;
+  color: var(--muted);
+  padding: 11px 12px;
+  border-radius: 14px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  transition: 0.2s ease;
+}
+
+.navItem:hover,
+.active {
+  color: var(--text);
+  background: rgba(255, 255, 255, 0.06);
+  border-color: var(--border);
+}
+
+.card {
+  margin-top: 28px;
+  padding: 16px;
+  border-radius: 20px;
+  border: 1px solid var(--border);
+  background: linear-gradient(
+    180deg,
+    rgba(139, 92, 246, 0.16),
+    rgba(255, 255, 255, 0.04)
+  );
+}
+
+.card span {
+  font-size: 12px;
+  color: var(--accent-2);
+}
+
+.card strong {
+  display: block;
+  margin-top: 8px;
+  font-size: 14px;
+}
+
+.card p {
+  margin: 8px 0 0;
+  font-size: 12px;
+  color: var(--muted);
+  line-height: 1.5;
+}
+
+@media (max-width: 900px) {
+  .sidebar {
+    display: none;
+  }
+}
